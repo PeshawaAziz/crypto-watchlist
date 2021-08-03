@@ -1,0 +1,98 @@
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.app {
+    background-image: radial-gradient(
+            at 0% 100%,
+            hsla(294, 100%, 64%, 1) 0,
+            transparent 100%
+        ),
+        radial-gradient(at 97% 3%, hsla(267, 71%, 61%, 1) 0, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.coin-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    border-radius: 1000px;
+    box-shadow: #ffffff70 0 5px 0 0;
+    transition: 0.1s;
+}
+.coin-item:hover {
+    box-shadow: #ffffff70 0 8px 0 0;
+    transform: translateY(-3px);
+}
+
+.coin-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.coin-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.coin-price {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.loading-icon {
+    background-color: #ffffff70;
+    border-radius: 100%;
+    padding: 5px;
+    animation: spin 1s linear infinite;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #000000;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn:active {
+    background-color: #1d1d1d;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
